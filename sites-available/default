@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+ServerName depot.yourhost.com
+DocumentRoot /home/dominic/Documents/appror/depot/public
+PassengerDefaultUser www-data
+RailsEnv development
+
+<Directory /home/dominic/Documents/appror/depot/public>
+Order allow,deny
+Allow from all
+</Directory>
+
+
+</VirtualHost>
